@@ -66,6 +66,7 @@ def pred_cluster(X, clusters):
 clusters = assign_clusters(X,clusters)
 clusters = update_clusters(X,clusters)
 pred = pred_cluster(X,clusters)
+plt.grid(True)
 plt.scatter(X[:,0],X[:,1],c = pred)
 for i in clusters:
 	center = clusters[i]['center']
